@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+
+      <div class="title">
+        <h1 id="title">Sample Survey Form</h1>
+        <p id="description">Please fill out all required fields</p> 
+      </div>
+
+      <form id="survey-form" action="h83d@protonmail.com" method="post">
+
+        <fieldset>
+          <label for="name" id="name-label">Name: <input id="name" type="text" required placeholder="Preferred name"/></label>
+          <label for="email" id="email-label">Email Address: <input id="email" type="email" required placeholder="john.doe@freecodecamp.com"/></label>
+          <label for="number" id="number-label">Age: (optional) <input id="number" type="number" min="18" max="99" placeholder="18+"/></label>
+        </fieldset>
+
+        <fieldset>
+          <label id="dropdown-label"> How did you hear about us?
+            <select id="dropdown">
+              <option>(Select One)</option>
+              <option value="1">Search Engine</option>
+              <option value="2">Word to Mouth</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label class="inline">Please select your gender:   </label>
+          <label id="gender-label" for="gender"><input id="gender" name="gender" type="radio" value="M" class="inline"/>Male<input id="gender" name="gender" type="radio" value="F" class="inline"/>Female</label>
+        </fieldset>
+
+        <fieldset class="vertical">
+          <label id="checkbox-label" for="checkbox">Please check all that apply: </label>
+            <input id="checkbox" type="checkbox" value="1"  class="vertical"/> One
+            <input id="checkbox" type="checkbox" value="2"  class="vertical"/> Two
+            <input id="checkbox" type="checkbox" value="3"  class="vertical"/> Three
+            <input id="checkbox" type="checkbox" value="4"  class="vertical"/> Four
+            <input id="checkbox" type="checkbox" value="5"  class="vertical"/> Five
+        </fieldset>
+
+        <fieldset>
+          <label id="comments-label" for="comments">Any Feedback For us?
+            <textarea id="comments" name="comments" placeholder="How can we improve?" ></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <input type="submit" value="submit">
+        </fieldset>
+
+      </form>
+    <!-- </div> -->
+   <!-- </div> -->
+ </body>
+ </html>
