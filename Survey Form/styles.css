@@ -1,6 +1,8 @@
 body {
     background-image:url(nebula.jpg);
-    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
     margin: 0;
     color: #000000FF;
     font-family: Arial, Helvetica, sans-serif;
